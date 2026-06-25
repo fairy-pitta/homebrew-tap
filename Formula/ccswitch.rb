@@ -4,8 +4,8 @@
 class Ccswitch < Formula
   desc "Multi-account switcher for Claude Code"
   homepage "https://github.com/fairy-pitta/cc-account-switcher"
-  url "https://github.com/fairy-pitta/cc-account-switcher/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "6063f0d13ec317a75b26cbdf64ed153c707b1ffce4d697fafa27ab66a774f924"
+  url "https://github.com/fairy-pitta/cc-account-switcher/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "d44168cce49689700883683d77cc33db91f52950a43307368b45196b095c93f1"
   license "MIT"
 
   depends_on "jq"
