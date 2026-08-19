@@ -5,21 +5,21 @@
 class Portree < Formula
   desc "Git Worktree Server Manager"
   homepage "https://github.com/fairy-pitta/portree"
-  version "0.2.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fairy-pitta/portree/releases/download/v0.2.0/portree_0.2.0_darwin_amd64.tar.gz"
-      sha256 "7df537941efa9316eee9c3614b38ffcabd424921f484b4c15bcaebb807d2f8af"
+      url "https://github.com/fairy-pitta/portree/releases/download/v0.5.0/portree_0.5.0_darwin_amd64.tar.gz"
+      sha256 "f796dcfb23b8c5d60b900303a1adb8819db17b54686fcc36eb36a05e6a48a3df"
 
       define_method(:install) do
         bin.install "portree"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fairy-pitta/portree/releases/download/v0.2.0/portree_0.2.0_darwin_arm64.tar.gz"
-      sha256 "f75b1e27535770c5969adfd51c53f2ceaa341add0851dd0ef94171acaa54e9c7"
+      url "https://github.com/fairy-pitta/portree/releases/download/v0.5.0/portree_0.5.0_darwin_arm64.tar.gz"
+      sha256 "a3b37fb9e538395717e5f65cca0de35965cae10b2080b49cdcc5efeffe4df456"
 
       define_method(:install) do
         bin.install "portree"
@@ -29,15 +29,15 @@ class Portree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fairy-pitta/portree/releases/download/v0.2.0/portree_0.2.0_linux_amd64.tar.gz"
-      sha256 "ec3ac61e0a5160489a9e9238d7ea8ab25be97404c109b30d928fbc401545ddc6"
+      url "https://github.com/fairy-pitta/portree/releases/download/v0.5.0/portree_0.5.0_linux_amd64.tar.gz"
+      sha256 "7cc4d949bef68ed51978145b494139bddfa1396203dd2197a76c9fc1cdb7c5d3"
       define_method(:install) do
         bin.install "portree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fairy-pitta/portree/releases/download/v0.2.0/portree_0.2.0_linux_arm64.tar.gz"
-      sha256 "3c3ea59317e283ddbd4de921df0c14cbb784aa5fac452c264ed1f7addbdb258f"
+      url "https://github.com/fairy-pitta/portree/releases/download/v0.5.0/portree_0.5.0_linux_arm64.tar.gz"
+      sha256 "db1d393fb678bb38f329845396fcfdc4c8e30365787d8541e93bde8078ea9153"
       define_method(:install) do
         bin.install "portree"
       end
